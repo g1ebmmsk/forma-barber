@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141412">
+  <meta name="description" content="FORMA — концепт мужского барбер-ателье. Точные стрижки, оформление бороды и внимание к твоему характеру. Попробуй демонстрационную запись.">
+  <title>FORMA — барбер-ателье</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/chair.png" as="image">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="header" id="header">
+    <a class="brand" href="#" aria-label="FORMA — на главную">F<span class="brand-o">O</span>RMA<span class="brand-dot">®</span></a>
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <a href="#services"><span>[01]</span> Услуги</a>
+      <a href="#approach"><span>[02]</span> Подход</a>
+      <a href="#team"><span>[03]</span> Мастера</a>
+      <a href="#faq"><span>[04]</span> Вопросы</a>
+      <a href="#contacts"><span>[06]</span> Контакты</a>
+    </nav>
+    <button class="header-book" data-book>Записаться <span aria-hidden="true"><svg class="ui-icon icon-arrow-ne" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню"><span></span><span></span></button>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация" hidden>
+    <a href="#services">01 / Услуги</a><a href="#approach">02 / Подход</a><a href="#team">03 / Мастера</a><a href="#faq">04 / Вопросы</a><a href="#contacts">06 / Контакты</a>
+  </nav>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/chair.png" alt="Кожаное барберское кресло в тёплом студийном свете" fetchpriority="high" width="1536" height="1024">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow hero-kicker"><span class="tiny-cross" aria-hidden="true"><svg class="ui-icon icon-asterisk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07 19.07 4.93"/></svg></span> Мужское барбер-ателье</p>
+        <h1 id="hero-title">ХАРАКТЕР<br>В ДЕТАЛЯХ<span class="accent">.</span></h1>
+        <p class="hero-description">Точная стрижка. Чистые линии.<br>Форма, в которой ты остаёшься собой.</p>
+        <button class="button button-sand" data-book>Найти свою форму <span aria-hidden="true"><svg class="ui-icon icon-arrow-ne" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button>
+      </div>
+      <div class="hero-side" aria-hidden="true">CRAFTED TO BE YOURSELF</div>
+      <div class="hero-bottom">
+        <a class="scroll-link" href="#services"><span class="scroll-arrow" aria-hidden="true"><svg class="ui-icon icon-arrow-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v18M5 14l7 7 7-7"/></svg></span> Листай, чтобы узнать нас</a>
+        <span class="hero-index">01 <span>—</span> 06</span>
+        <span class="demo-tag"><i></i> Концепт барбершопа</span>
+      </div>
+    </section>
+    <section class="services section" id="services" aria-labelledby="services-title">
+      <div class="section-top"><span class="eyebrow">[01 / Меню услуг]</span><span class="eyebrow muted">Время для себя</span></div>
+      <div class="section-heading"><h2 id="services-title">Хорошая форма.<br><span class="serif">Ничего лишнего.</span></h2><p>От первого движения ножниц до финальной укладки. Выбери свой ритуал — всё остальное оставь мастеру.</p></div>
+      <div class="service-list">
+        <button class="service" data-book data-service="cut"><span class="service-number">01</span><span class="service-name">Мужская стрижка<small>Консультация, мытьё, стрижка и укладка</small></span><span class="service-time">60 мин</span><span class="service-price">2 500 ₽</span><span class="service-arrow" aria-hidden="true"><svg class="ui-icon icon-arrow-ne" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button>
+        <button class="service" data-book data-service="beard"><span class="service-number">02</span><span class="service-name">Борода и контуры<small>Форма, чёткие линии и уход</small></span><span class="service-time">40 мин</span><span class="service-price">1 500 ₽</span><span class="service-arrow" aria-hidden="true"><svg class="ui-icon icon-arrow-ne" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button>
+        <button class="service" data-book data-service="combo"><span class="service-number">03</span><span class="service-name">Полный образ <em>Выбор FORMA</em><small>Стрижка и борода в одном ритуале</small></span><span class="service-time">90 мин</span><span class="service-price">3 500 ₽</span><span class="service-arrow" aria-hidden="true"><svg class="ui-icon icon-arrow-ne" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button>
+        <button class="service" data-book data-service="shave"><span class="service-number">04</span><span class="service-name">Королевское бритьё<small>Горячее полотенце, бритьё и уход за кожей</small></span><span class="service-time">45 мин</span><span class="service-price">2 000 ₽</span><span class="service-arrow" aria-hidden="true"><svg class="ui-icon icon-arrow-ne" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button>
+      </div>
+      <p class="fine-print">Услуги и цены приведены для демонстрации концепции.</p>
+    </section>
+    <section class="approach" id="approach" aria-labelledby="approach-title">
+      <div class="craft-image-wrap"><img src="assets/craft.png" alt="Мастер работает ножницами и расчёской, создавая плавный переход стрижки" width="1536" height="1024" loading="lazy"><span class="image-caption">Дело в руках. И в отношении.</span></div>
+      <div class="approach-content">
+        <span class="eyebrow">[02 / Философия ателье]</span>
+        <h2 id="approach-title">Точность<br>в движениях.<br><span class="serif">Свобода<br>в характере.</span></h2>
+        <p>Хорошая стрижка начинается с разговора. Как ты живёшь, что носишь, сколько времени готов тратить на укладку.</p>
+        <p>Мы ищем форму, которая подходит именно тебе. Работаем с текстурой, пропорциями и деталями — чтобы в зеркале ты видел себя.</p>
+        <div class="craft-values"><span>Внимание к тебе</span><span>Уважение к ремеслу</span><span>Без спешки</span></div>
+      </div>
+    </section>
+    <div class="statement" aria-hidden="true"><span>ТОЧНОСТЬ</span><span class="statement-star"><svg class="ui-icon icon-asterisk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07 19.07 4.93"/></svg></span><span class="outline-text">СВОЙ ХАРАКТЕР</span></div>
+    <section class="team section" id="team" aria-labelledby="team-title">
+      <div class="section-top"><span class="eyebrow">[03 / Люди и ремесло]</span><span class="eyebrow muted">Демонстрационная команда</span></div>
+      <div class="team-layout">
+        <div class="team-intro"><h2 id="team-title">Твоя форма.<br><span class="serif">Наши руки.</span></h2><p>У каждого мастера — свой почерк.<br>У всех — внимание к деталям.</p><span class="team-symbol" aria-hidden="true"><svg class="ui-icon icon-asterisk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07 19.07 4.93"/></svg></span></div>
+        <div class="master-list">
+          <article class="master"><span class="master-index">/ 01</span><div><span class="eyebrow muted">Топ-барбер</span><h3>Марк</h3><p>Классические формы, работа ножницами<br>и естественная текстура.</p></div><button class="circle-button" data-book data-master="mark" aria-label="Записаться к Марку"><svg class="ui-icon icon-arrow-ne" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></button></article>
+          <article class="master"><span class="master-index">/ 02</span><div><span class="eyebrow muted">Барбер</span><h3>Данил</h3><p>Плавные фейды, короткие стрижки<br>и графичные контуры.</p></div><button class="circle-button" data-book data-master="danil" aria-label="Записаться к Данилу"><svg class="ui-icon icon-arrow-ne" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></button></article>
+          <article class="master"><span class="master-index">/ 03</span><div><span class="eyebrow muted">Барбер</span><h3>Алекс</h3><p>Борода, традиционное бритьё<br>и комплексный уход.</p></div><button class="circle-button" data-book data-master="alex" aria-label="Записаться к Алексу"><svg class="ui-icon icon-arrow-ne" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></button></article>
+        </div>
+      </div>
+    </section>
+    <section class="faq section" id="faq" aria-labelledby="faq-title">
+      <div class="faq-heading"><span class="eyebrow">[04 / Перед визитом]</span><h2 id="faq-title">Пара<br><span class="serif">деталей.</span></h2></div>
+      <div class="faq-list">
+        <details open><summary>Не знаю, какая стрижка мне подойдёт<span aria-hidden="true"></span></summary><p>Это нормально. В концепции FORMA каждая стрижка начинается с консультации: мастер учитывает форму лица, тип волос и привычки в укладке. Можно принести фотографии того, что нравится.</p></details>
+        <details><summary>Что входит в стоимость стрижки?<span aria-hidden="true"></span></summary><p>Консультация, мытьё головы, стрижка и финальная укладка. Мастер также покажет, как повторить укладку дома.</p></details>
+        <details><summary>Нужно ли записываться заранее?<span aria-hidden="true"></span></summary><p>Предварительная запись помогает выбрать удобное время и мастера. На этом сайте можно попробовать весь процесс: от выбора услуги до итоговой карточки визита.</p></details>
+        <details><summary>Здесь можно записаться по-настоящему?<span aria-hidden="true"></span></summary><p>Это демонстрационный сайт вымышленного барбершопа. Форма показывает сценарий записи, но не бронирует реальный визит и не отправляет данные. Имена мастеров, цены и расписание — примеры.</p></details>
+      </div>
+    </section>
+    <section class="closing section" aria-labelledby="closing-title">
+      <div class="section-top"><span class="eyebrow">[05 / Твоё время]</span><span class="eyebrow">Каждая деталь имеет значение</span></div>
+      <h2 id="closing-title">ПОРА<br><span class="serif">принять форму.</span></h2>
+      <button class="button button-dark" data-book>Выбрать время <span aria-hidden="true"><svg class="ui-icon icon-arrow-ne" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button>
+      <div class="closing-footer"><span>Мужские стрижки & уход за бородой</span><span>FORMA / BARBER ATELIER</span></div>
+    </section>
+    <section class="contacts section" id="contacts" aria-labelledby="contacts-title">
+      <div class="section-top"><span class="eyebrow">[06 / На связи]</span><span class="eyebrow contact-demo-label">Демонстрационный блок</span></div>
+      <div class="section-heading contact-heading">
+        <h2 id="contacts-title">Место встречи —<br><span class="serif">твоя FORMA.</span></h2>
+        <p>Здесь появятся контакты ателье, точка на карте и впечатления наших гостей.</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-details">
+          <h3 class="eyebrow">Будем рядом</h3>
+          <dl class="contact-list">
+            <div><dt>01 / Адрес</dt><dd>Наш адрес — скоро<small>Город, улица и номер дома</small></dd></div>
+            <div><dt>02 / Телефон</dt><dd>Номер появится здесь<small>Для записи и вопросов</small></dd></div>
+            <div><dt>03 / Часы работы</dt><dd>Расписание уточняется<small>Добавим перед открытием</small></dd></div>
+          </dl>
+          <p class="contact-note">Контакты пока не указаны.<br>Это пример оформления раздела.</p>
+        </div>
+        <figure class="map-placeholder" aria-labelledby="map-caption">
+          <svg class="map-art" viewBox="0 0 800 540" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+            <rect width="800" height="540" fill="#d1d6cc"/>
+            <g fill="#bac6b5"><path d="M0 0h170l40 120-73 78L0 156Z"/><path d="m607 0 193 0v165l-74 23-104-57Z"/><path d="m568 363 107-47 125 36v188H631l-58-83Z"/></g>
+            <g fill="#c2c8be" stroke="#b6bdb1" stroke-width="1"><path d="m227 19 111-19 16 124-105 24Z"/><path d="m391 0 134 0 21 119-126 17Z"/><path d="m38 240 132 26-23 109L0 359v-91Z"/><path d="m227 214 126-28 34 121-123 34Z"/><path d="m430 192 119-20 29 101-112 42Z"/><path d="m635 207 165 22v72l-153-23Z"/><path d="m208 403 111-25 40 162H225Z"/><path d="m412 378 100-29 26 115-100 32Z"/></g>
+            <path d="M-80 421C120 483 151 439 282 374S533 246 660 300s127 110 225 67" fill="none" stroke="#adbfbb" stroke-width="39"/>
+            <g fill="none" stroke="#eeeae0" stroke-width="24"><path d="M178-45 235 177 295 362 352 595"/><path d="M554-40 585 141 629 296 560 540"/><path d="m-30 190 245 15 360-64 250 63"/><path d="m-30 401 285-24 340-79 246 48"/></g>
+            <g fill="none" stroke="#e5e3da" stroke-width="9"><path d="m-10 88 183 39M347-20l42 179M402 167l43 185M136 222l-37 174M459 359l41 204M669 172l45 140M606 421l204 58M367 93l202-30"/></g>
+            <g transform="translate(417 268)"><circle r="59" fill="#607660" opacity=".12"/><circle r="39" fill="#607660" opacity=".18"/><path d="M0 22C-8 12-23-2-23-17a23 23 0 0 1 46 0C23-2 8 12 0 22Z" fill="#293c2f"/><circle cy="-17" r="7" fill="#e6e9df"/></g>
+          </svg>
+          <span class="map-badge">Карта / пример</span>
+          <span class="map-brand" aria-hidden="true">FORMA</span>
+          <figcaption id="map-caption"><span>Здесь будет наше ателье<small>Схематичная карта. Реальный адрес пока не указан.</small></span><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="6"/></svg></figcaption>
+        </figure>
+      </div>
+      <div class="reviews-placeholder" aria-labelledby="reviews-title">
+        <div class="reviews-heading"><div><span class="eyebrow">Впечатления после визита</span><h3 id="reviews-title">Слово <span class="serif">гостям.</span></h3></div><span class="reviews-status">Отзывы ещё впереди</span></div>
+        <div class="review-grid">
+          <article class="review-placeholder"><span class="review-number">01 / Место для отзыва</span><h4>О первой встрече</h4><p>Здесь появится настоящий отзыв гостя о знакомстве с ателье.</p><span class="review-empty">Пока нет отзыва</span></article>
+          <article class="review-placeholder"><span class="review-number">02 / Место для отзыва</span><h4>О работе мастера</h4><p>Здесь гость сможет рассказать о стрижке, деталях и результате.</p><span class="review-empty">Пока нет отзыва</span></article>
+          <article class="review-placeholder"><span class="review-number">03 / Место для отзыва</span><h4>Об атмосфере</h4><p>Здесь будут впечатления о комфорте, заботе и времени для себя.</p><span class="review-empty">Пока нет отзыва</span></article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><a class="brand" href="#" aria-label="FORMA — на главную">FORMA<span class="brand-dot">®</span></a><p>Дизайн-концепт. Вымышленное ателье.<br>Изображения созданы с помощью ИИ.</p><button class="text-button" id="about-demo">О демоверсии <span aria-hidden="true"><svg class="ui-icon icon-arrow-ne" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button><a href="#" class="back-top">Наверх <svg class="ui-icon icon-arrow-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21V3M5 10l7-7 7 7"/></svg></a></footer>
+  <dialog id="booking" class="booking" aria-labelledby="booking-title">
+    <div class="dialog-header"><a class="brand" href="#" tabindex="-1">FORMA<span class="brand-dot">®</span></a><button class="close-button" id="close-booking" aria-label="Закрыть запись"><svg class="ui-icon icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 5 14 14M5 19 19 5"/></svg></button></div>
+    <div class="booking-body">
+      <div id="booking-flow">
+        <p class="eyebrow booking-label">Твоё время для себя / демозапись</p>
+        <h2 id="booking-title">Твоя следующая<br><span class="serif">хорошая форма.</span></h2>
+        <p class="booking-note">Попробуй запись: данные не отправляются, настоящий визит не создаётся.</p>
+        <form id="booking-form">
+          <div class="form-grid"><label>01 / Услуга<select id="service-select" name="service"><option value="cut">Мужская стрижка — 2 500 ₽</option><option value="beard">Борода и контуры — 1 500 ₽</option><option value="combo">Полный образ — 3 500 ₽</option><option value="shave">Королевское бритьё — 2 000 ₽</option></select></label><label>02 / Мастер<select id="master-select" name="master"><option value="any">Любой мастер</option><option value="mark">Марк</option><option value="danil">Данил</option><option value="alex">Алекс</option></select></label></div>
+          <fieldset><legend>03 / День визита</legend><div class="date-options" id="date-options"></div></fieldset>
+          <fieldset><legend>04 / Удобное время <span class="muted">(пример расписания)</span></legend><div class="time-options" id="time-options"></div></fieldset>
+          <div class="booking-summary"><div><span id="summary-service">Мужская стрижка</span><small id="summary-duration">60 минут</small></div><strong id="summary-price">2 500 ₽</strong></div>
+          <p id="form-error" class="form-error" aria-live="polite"></p>
+          <button type="submit" class="button button-light">Попробовать запись <span aria-hidden="true"><svg class="ui-icon icon-arrow-ne" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button>
+        </form>
+      </div>
+      <div id="booking-success" hidden aria-live="polite">
+        <span class="success-mark" aria-hidden="true"><svg class="ui-icon icon-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m4 12 5 5L20 6"/></svg></span><p class="eyebrow">Всё получилось</p><h2>Вот так выглядит<br><span class="serif">твоя запись.</span></h2><div id="confirmation-details"></div><p class="booking-note">Это демонстрация. Реальный визит не забронирован, данные никуда не отправлены.</p><button class="button button-light" id="book-again">Выбрать другой вариант <span aria-hidden="true"><svg class="ui-icon icon-arrow-ne" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button>
+      </div>
+    </div>
+  </dialog>
+  <dialog id="demo-info" class="info-dialog" aria-labelledby="info-title"><button class="close-button" id="close-info" aria-label="Закрыть информацию"><svg class="ui-icon icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 5 14 14M5 19 19 5"/></svg></button><p class="eyebrow">FORMA / Дизайн-концепт</p><h2 id="info-title">Сайт для примера.</h2><p>FORMA — вымышленное барбер-ателье. Мастера, услуги, цены и расписание показывают возможности сайта. Изображения созданы с помощью ИИ.</p><p>Форма записи работает только в браузере. Она не собирает контакты и не отправляет заявки.</p><button class="button button-light" id="info-done">Понятно <span aria-hidden="true"><svg class="ui-icon icon-arrow-ne" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button></dialog>
+</body>
+</html>
